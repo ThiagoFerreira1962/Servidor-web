@@ -1,0 +1,218 @@
+.btn-default {
+  background-color:#14D299;
+  border-color: #14D299;
+  color: #000;
+}
+
+
+.btn-default:not(.sin-hover):hover {
+  background-color: #7EF1D2;
+  border-color: #7EF1D2;
+  color: #000;
+}
+
+.esp-no-marcada {
+  display: inline-block;
+  padding: .25rem .85rem;
+  border: 1px solid #6c757d;
+  border-radius: 50rem;
+  background: transparent;
+  color: #5b6268;
+  font-size: .875rem;
+}
+
+.esp-no-marcada:hover {
+  background-color: #7EF1D2;
+  border-color: #7EF1D2;
+  color: #000;
+}
+
+
+.btn-check:checked + .esp-no-marcada {
+  background-color:#14D299;
+  border-color: #14D299;
+  color: #000;
+}
+
+body {
+	background-color:#EAFAF1;
+}
+
+/* Tarjeta blanca */
+.glass {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.glass hr {
+    border-color: #dee2e6;
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-right: .5rem;
+  border-radius: 50%;
+  background: #e9ecef;
+  color: #212529;
+  font-size: .9rem;
+  object-fit: cover; 
+}
+
+.btn-tile {
+  width: 200px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  border: 0;
+  border-radius: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .05em;
+  transition: transform .25s, filter .15s;
+}
+.btn-tile:hover {
+  color: #14D299;
+  transform: translateY(-10px);
+  filter: brightness(.9);
+}
+.btn-tile i { font-size: 3.5rem; line-height: 1; }
+
+.btn-tile-sm { height: 80px; font-size: .95rem; }
+
+.botonera-btn-verde   { background: #14D299; }
+
+.mt-botonera {
+  margin-top: 20vh;
+  margin-bottom:3vh;
+}
+
+.mt-botonera-logeado {
+  margin-top: 8vh;
+  margin-bottom:3vh;
+}
+
+.btn-editar {
+	  background-color:#14D299;
+  border-color: #14D299;
+  color: #000;
+}
+
+.btn-editar:hover {
+  background-color: #7EF1D2;
+  border-color: #7EF1D2;
+  color: #000;
+}
+
+[contenteditable="true"] {
+	  outline: none;
+  background-color: #fff8dc;   /* amarillo suave */
+  border-bottom: 2px solid #198754;
+}
+
+.foto-perfil {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.foto-perfil .image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.foto-perfil .middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.foto-perfil:hover .image {
+  opacity: 0.3;
+}
+
+.foto-perfil:hover .middle {
+  opacity: 1;
+}
+
+.foto-perfil .text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.btn-delete {
+  font-size: 16px;
+  color: red;
+}
+
+.btn-delete > .mdi-delete-empty {
+  display: none;
+}
+
+.btn-delete:hover {
+  background-color: #fff5f5;
+}
+
+.btn-delete:hover > .mdi-delete-empty {
+  display: block;
+}
+
+.btn-delete:hover > .mdi-delete {
+  display: none;
+}
+
+.btn-delete:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #ffcccc;
+}
+
+
+.list-group-item:has(input[type="radio"]:checked) {
+  background-color:#7EF1D2;
+  border-color: #0d6efd;
+}
+
+.campoEdit {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  margin-left: -0.5rem;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.campoEdit.editando {
+  border-color: #ced4da;
+  background-color: #fff;
+  color: #212529 !important;
+}
+
+.campoEdit.editando:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.2);
+  outline: none;
+}
+
+input[name="nombre"].campoEdit,
+input[name="apellido"].campoEdit {
+  width: 200px !important;
+}

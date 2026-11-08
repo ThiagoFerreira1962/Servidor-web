@@ -1,0 +1,13 @@
+/bin/
+*.class
+
+target/
+.project
+.classpath
+.settings/
+bin/
+/build/
+
+.ruleset
+.pmd
+.checkstyle
